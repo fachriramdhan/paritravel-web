@@ -1,294 +1,215 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PARI TRAVEL</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <!-- home section starts here  -->
-    <section class="home">
-        <div class="home-box">
-            <nav>
-                <div class="logo bars">
-                    <div class="bar">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                    <h1 class="logos">PARI TRAVEL</h1>
-                </div>
-                <div class="menu">
-                    <div class="close">
-                        <i class="fa fa-close"></i>
-                    </div>
-                    <ul>
-                        <li><a href="#">beranda</a></li>
-                        <li><a href="#">tentang</a></li>
-                        <li><a href="#">paket wisata</a></li>
-                        <li><a href="#">destinasi</a></li>
-                        <li><a href="#">karir</a></li>
-                    </ul>
-                </div>
-                <div class="signup-login">
-                    <!-- <a href="#">daftar</a>
-                    <a href="#">masuk</a> -->
-                </div>
-            </nav>
-
-            <div class="content">
-                
-                <h1>yuk mulai perjalanan impianmu</h1>
-                <p>temukan destinasi inspiratif, ciptakan kenangan tak terlupakan, dan jelajahi dengan percaya diri - petualangan dimulai di sini</p>
-
-                <div class="search">
-                    <i class="fa fa-search"></i>
-                    <input type="text" placeholder="perjalananmu dimulai dengan pencarian...">
-                    <button>cari</button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pari Travel</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Pari Travel</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Beranda</a></li>
+        <li class="link"><a href="#">Pesan</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+        <li class="link"><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Rasakan Liburan Impian Anda</h1>
+          <p>
+            Pesan hotel, penerbangan, dan paket menginap dengan harga terendah.
+          </p>
         </div>
-    </section>    
-    <!-- home section ends here  -->
-
-    <!-- travel section starts here  -->
-    <section class="travel">
-        <div class="container">
-            <div class="box box1">
-                <img src="planning.png" alt="">
-                <div class="content">
-                    <h4>perencanaan perjalanan yang lancar</h4>
-                    <p>Rencanakan perjalananmu dengan mudah dan nyaman. Kami siap membantu setiap langkahmu.</p>
-                </div>
+        <div class="booking__container">
+          <form>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Lokasi</label>
+              </div>
+              <p>Ke mana Anda akan pergi?</p>
             </div>
-            <div class="box box2">
-                <img src="map.png" alt="">
-                <div class="content">
-                    <h4>pengalaman yang disesuaikan</h4>
-                    <p>Kami menawarkan pengalaman yang disesuaikan dengan kebutuhan dan keinginanmu.</p>
-                </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Check In</label>
+              </div>
+              <p>Tambahkan tanggal</p>
             </div>
-            <div class="box box3">
-                <img src="trust.png" alt="">
-                <div class="content">
-                    <h4>andal dan terpercaya</h4>
-                    <p>Dengan reputasi yang solid, kami adalah mitra perjalanan yang dapat kamu percayai.</p>
-                </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Check Out</label>
+              </div>
+              <p>Tambahkan tanggal</p>
             </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+                <label>Tamu</label>
+              </div>
+              <p>Tambahkan jumlah tamu</p>
+            </div>
+          </form>
+          <button class="btn"><i class="ri-search-line"></i></button>
         </div>
+      </div>
+    </header>
+
+    <section class="section__container popular__container">
+      <h2 class="section__header">Hotel Populer</h2>
+      <div class="popular__grid">
+        <div class="popular__card">
+          <img src="assets/hotel-1.jpg" alt="hotel populer" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Plaza Hotel</h4>
+              <h4>Rp7.600.000</h4>
+            </div>
+            <p>New York City, USA</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/hotel-2.jpg" alt="hotel populer" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Ritz Paris</h4>
+              <h4>Rp8.400.000</h4>
+            </div>
+            <p>Paris, Prancis</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/hotel-3.jpg" alt="hotel populer" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Peninsula</h4>
+              <h4>Rp9.200.000</h4>
+            </div>
+            <p>Hong Kong</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/hotel-4.jpg" alt="hotel populer" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Atlantis The Palm</h4>
+              <h4>Rp6.900.000</h4>
+            </div>
+            <p>Dubai, Uni Emirat Arab</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/hotel-5.jpg" alt="hotel populer" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>The Ritz-Carlton</h4>
+              <h4>Rp9.600.000</h4>
+            </div>
+            <p>Tokyo, Jepang</p>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/hotel-6.jpg" alt="hotel populer" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Marina Bay Sands</h4>
+              <h4>Rp8.400.000</h4>
+            </div>
+            <p>Singapura</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- travel section ends here  -->
 
-    <!-- destinatons section starts here  -->
-    <section class="destinations">
-        <h4 class="label">destinasi</h4>
-        <div class="container">
-            <div class="container-box">
-                <h2 class="heading">melarikan diri ke kota dan retreat alam</h2>
-                <div class="content">
-                    <p>Temukan keindahan alam dan pesona kota di Indonesia. Kami menawarkan berbagai destinasi yang siap memanjakanmu.</p>
-                    <a href="#">jelajahi lebih lanjut <i class="fa fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="gallery">
-                <div class="box box1">
-                    <img src="home-background.jpg" alt="">
-                    <div class="text">
-                        <h2>nusa tenggara timur</h2>
-                    </div>
-                </div>
-                <div class="box box2">
-                    <img src="destinations-1.jpg" alt="">
-                    <div class="text">
-                        <h2>bali</h2>
-                    </div>
-                </div>
-                <div class="box box3">
-                    <img src="destinations-2.jpg" alt="">
-                    <div class="text">
-                        <h2>bali</h2>
-                    </div>
-                </div>
-                <div class="box box4">
-                    <img src="destinations-3.jpg" alt="">
-                    <div class="text">
-                        <h2>jatim</h2>
-                    </div>
-                </div>
-                <div class="box box5">
-                    <img src="destinations-4.jpg" alt="">
-                    <div class="text">
-                        <h2>papua barat</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- destinatons section ends here  -->
-
-    <!-- featured section starts here  -->
-    <section class="featured">
-        <div class="gallery">
-            <div class="box box1">
-                <div class="first-box">
-                    <h4 class="label">penawaran menarik</h4>
-                    <h2 class="heading">buka penawaran perjalanan eksklusif</h2>
-                    <p>
-                        Temukan penawaran terbaik untuk perjalananmu selanjutnya.
-                    </p>
-                    <a href="#">lihat lebih banyak</a>
-                    <div class="image">
-                        <img src="plane.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="box box2">
-                <img src="featured-1.jpg" alt="">
-                <div class="content">
-                    <h2>hotel yuliaya</h2>
-                    <p>gili trawangan, lombok</p>
-                    <div class="review-and-idr">
-                        <div class="review"><i class="fa fa-star"></i> 4.9 | 853 ulasan</div>
-                        <p>idr 343.000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box3">
-                <img src="featured-2.jpg" alt="">
-                <div class="content">
-                    <h2>hotel feranndo</h2>
-                    <p>gili trawangan, lombok</p>
-                    <div class="review-and-idr">
-                        <div class="review"><i class="fa fa-star"></i> 4.9 | 853 ulasan</div>
-                        <p>idr 343.000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box box4">
-                <img src="featured-3.jpg" alt="">
-                <div class="content">
-                    <h2>hotel evin</h2>
-                    <p>gili trawangan, lombok</p>
-                    <div class="review-and-idr">
-                        <div class="review"><i class="fa fa-star"></i> 4.9 | 853 ulasan</div>
-                        <p>idr 343.000</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- featured section ends here  -->
-
-    <!-- feedback section starts here  -->
-    <section class="feedback">
-        <div class="container">
-            <h4 class="label">suara petualangan</h4>
-            <h2 class="heading">suara petualang</h2>
-            <p class="paragraph">
-                kisah nyata dari komunitas petualang kami
+    <section class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">Apa kata pelanggan kami</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="assets/client-1.jpg" alt="pelanggan" />
+            <p>
+              Proses pemesanan sangat mudah, dan konfirmasi instan. Saya sangat
+              merekomendasikan Pari Travel untuk pemesanan hotel tanpa repot.
             </p>
+          </div>
+          <div class="client__card">
+            <img src="assets/client-2.jpg" alt="pelanggan" />
+            <p>
+              Situs web ini memberikan informasi detail tentang hotel, termasuk
+              fasilitas dan foto, yang membantu saya membuat keputusan.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="assets/client-3.jpg" alt="pelanggan" />
+            <p>
+              Saya bisa memesan kamar dalam hitungan menit, dan hotel tersebut
+              melebihi ekspektasi saya. Saya menghargai efisiensi dan keandalan
+              Pari Travel.
+            </p>
+          </div>
         </div>
-
-        <div class="voices">
-            <div class="voice box1">
-                <div class="profile">
-                    <img src="photo1.jpg" alt="">
-                    <div class="detail">
-                        <li>marvin davin</li>
-                        <li>traveler</li>
-                    </div>
-                </div>
-                <p>"Perjalanan saya ke Bali adalah pengalaman yang tak terlupakan. Keindahan alam dan budayanya sangat mengesankan!"</p>
-            </div>
-            <div class="voice box2">
-                <div class="profile">
-                    <img src="photo2.jpg" alt="">
-                    <div class="detail">
-                        <li>sari lestari</li>
-                        <li>traveler</li>
-                    </div>
-                </div>
-                <p>"Saya sangat menikmati liburan di Yogyakarta. Makanan dan tempat wisata yang luar biasa!"</p>
-            </div>
-            <div class="voice box3">
-                <div class="profile">
-                    <img src="photo3.jpg" alt="">
-                    <div class="detail">
-                        <li>andi prasetyo</li>
-                        <li>traveler</li>
-                    </div>
-                </div>
-                <p>"Pengalaman snorkeling di Raja Ampat sangat menakjubkan. Banyak ikan warna-warni!"</p>
-            </div>
-            <div class="voice box4">
-                <div class="profile">
-                    <img src="photo4.jpg" alt="">
-                    <div class="detail">
-                        <li>rinanda putri</li>
-                        <li>traveler</li>
-                    </div>
-                </div>
-                <p>"Liburan ke Lombok adalah keputusan terbaik saya! Pantai-pantainya menakjubkan!"</p>
-            </div>
-        </div>
+      </div>
     </section>
-    <!-- feedback section ends here  -->
 
+    <section class="section__container">
+      <div class="reward__container">
+        <p>100+ kode diskon</p>
+        <h4>
+          Bergabung dengan rewards dan temukan diskon luar biasa untuk pemesanan
+          Anda
+        </h4>
+        <button class="reward__btn">Bergabung dengan Rewards</button>
+      </div>
+    </section>
 
-    <!-- footer section starts here  -->
-    <footer>
-        <section class="footer">
-            <div class="container">
-                <div class="detail">
-                    <h3>PARI TRAVEL</h3>
-                    <p>Nikmati perjalanan indahmu dan menyengkan dengan layanan yang menarik. Buat semuanya menjadi istimewa untuk tiap perjalananmu</p>
-                    <h5>hubungi kami</h5>
-                    <a href="#">admin@paritravel.com</a>
-                    <div class="social">
-                        <a href="#"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="#"><i class="fa fa-facebook-square"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square"></i></a>
-                    </div>
-                </div>
-                <div class="about-us">
-                    <h4>tentang kami</h4>
-                    <li><a href="#">tentang kami</a></li>
-                    <li><a href="#">syarat dan ketentuan</a></li>
-                    <li><a href="#">karir <span>kami sedang mencari!</span></a></li>
-                    <li><a href="#">misi dan nilai</a></li>
-                    <li><a href="#">kemitraan</a></li>
-                </div>
-                <div class="about-us">
-                    <h4>bantuan</h4>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">panduan pemesanan</a></li>
-                    <li><a href="#">kebijakan pembatalan</a></li>
-                    <li><a href="#">peta situs</a></li>
-                </div>
-                <div class="about-us">
-                    <h4>sumber daya</h4>
-                    <li><a href="#">newsletter</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">galeri</a></li>
-                    <li><a href="#">penawaran</a></li>
-                </div>
-            </div>
-    
-            <div class="copyright">
-                <div>
-                    &copy;2024 - Pari Travel, semua hak dilindungi
-                </div>
-                <div>
-                    <a href="#">syarat & ketentuan</a>
-                    <a href="#">kebijakan privasi</a>
-                </div>
-            </div>
-        </section>
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Pari Travel</h3>
+          <p>
+            Pari Travel adalah situs pemesanan hotel utama yang menawarkan cara
+            mudah dan nyaman untuk menemukan dan memesan akomodasi di seluruh
+            dunia.
+          </p>
+          <p>
+            Dengan antarmuka yang ramah pengguna dan berbagai pilihan hotel,
+            Pari Travel bertujuan untuk memberikan pengalaman bebas stres bagi
+            wisatawan yang mencari penginapan yang sempurna.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Perusahaan</h4>
+          <p>Tentang Kami</p>
+          <p>Tim Kami</p>
+          <p>Blog</p>
+          <p>Pesan</p>
+          <p>Hubungi Kami</p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Syarat & Ketentuan</p>
+          <p>Kebijakan Privasi</p>
+        </div>
+        <div class="footer__col">
+          <h4>Sumber Daya</h4>
+          <p>Media Sosial</p>
+          <p>Pusat Bantuan</p>
+          <p>Kerjasama</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Hak Cipta © 2023 Pari Travel. Semua hak dilindungi.
+      </div>
     </footer>
-    
-    <!-- footer section ends here  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
