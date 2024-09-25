@@ -1,504 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PARI TRAVEL</title>
-
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-</head>
-<body id="top">
-
-  <header class="header" data-header>
-    <div class="header-bottom">
-        <div class="container">
-            <ul class="social-list">
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-youtube"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-            <nav class="navbar" data-navbar>
-                <div class="navbar-top">
-                    <a href="#" class="logo">
-                    </a>
-                    <button class="nav-close-btn" aria-label="Tutup Menu" data-nav-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>beranda</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link" data-nav-link>tentang kami</a>
-                    </li>
-                    <li>
-                        <a href="#destination" class="navbar-link" data-nav-link>destinasi</a>
-                    </li>
-                    <li>
-                        <a href="#package" class="navbar-link" data-nav-link>paket</a>
-                    </li>
-                    <li>
-                        <a href="#gallery" class="navbar-link" data-nav-link>galeri</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navbar-link" data-nav-link>hubungi kami</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn btn-primary">Pesan Sekarang</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Travel | Pari</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">PARI TRAVEL</a>
         </div>
-    </div>
-</header>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#tour">Tur</a></li>
+        <li><a href="#package">Paket</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="#">Booking</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn">Booking</button>
+      </div>
+    </nav>
 
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>TINGKATKAN PERJALANAN ANDA</p>
+          <h1>Rasakan Keajaiban Penerbangan!</h1>
+          <div class="header__btns">
+            <button class="btn">Pesan Perjalanan Sekarang</button>
+            <a href="#">
+              <span><i class="ri-play-circle-fill"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+      </div>
+    </header>
 
-  <main>
-    <article>
-      <section class="hero" id="home">
-        <div class="container">
-            <h2 class="h1 hero-title">Perjalanan Menjelajahi Dunia</h2>
-            <p class="hero-text">
-                Apakah kamu ingin menjelajahi? Apa yang akan kamu temukan? Temukan tempat-tempat menarik yang menanti untuk dijelajahi.
-                Mari kita mulai petualangan ini!
-            </p>
-            <div class="btn-group">
-                <button class="btn btn-primary">Pelajari lebih lanjut</button>
-                <button class="btn btn-secondary">Pesan sekarang</button>
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header">Destinasi Populer</h2>
+      <p class="section__description">
+        Temukan Destinasi yang Paling Disukai di Seluruh Dunia
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img src="assets/destination-1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Tradisi dan Futurisme</h4>
+              <p>Kota New York, AS</p>
             </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
         </div>
-    </section>
-    
-    <section class="tour-search">
-        <div class="container">
-            <form action="" class="tour-search-form">
-                <div class="input-wrapper">
-                    <label for="destination" class="input-label">Cari Destinasi*</label>
-                    <input type="text" name="destination" id="destination" required placeholder="Masukkan Destinasi" class="input-field">
-                </div>
-    
-                <div class="input-wrapper">
-                    <label for="people" class="input-label">Jumlah Pax*</label>
-                    <input type="number" name="people" id="people" required placeholder="Jumlah Orang" class="input-field">
-                </div>
-    
-                <div class="input-wrapper">
-                    <label for="checkin" class="input-label">Tanggal Check-in**</label>
-                    <input type="date" name="checkin" id="checkin" required class="input-field">
-                </div>
-    
-                <div class="input-wrapper">
-                    <label for="checkout" class="input-label">Tanggal Check-out*</label>
-                    <input type="date" name="checkout" id="checkout" required class="input-field">
-                </div>
-    
-                <button type="submit" class="btn btn-secondary">Tanyakan sekarang</button>
-            </form>
+        <div class="destination__card">
+          <img src="assets/destination-2.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Kota Cahaya</h4>
+              <p>Paris, Prancis</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
         </div>
-    </section>
-    
-    <section class="popular" id="destination">
-      <div class="container">
-          <p class="section-subtitle">Temukan Tempat</p>
-          <h2 class="h2 section-title">Destinasi Populer</h2>
-          <p class="section-text">
-              Temukan berbagai tempat menarik yang menanti untuk dijelajahi. Setiap sudut menawarkan keindahan tersendiri.
-          </p>
-          <ul class="popular-list">
-  
-              <li>
-                  <div class="popular-card">
-                      <figure class="card-img">
-                          <img src="./assets/images/popular-1.jpg" alt="San Miguel, Italia" loading="lazy">
-                      </figure>
-                      <div class="card-content">
-                          <div class="card-rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                          </div>
-                          <p class="card-subtitle">
-                              <a href="#">Italia</a>
-                          </p>
-                          <h3 class="h3 card-title">
-                              <a href="#">San Miguel</a>
-                          </h3>
-                          <p class="card-text">
-                              Temukan keindahan San Miguel yang menakjubkan.
-                          </p>
-                      </div>
-                  </div>
-              </li>
-  
-              <li>
-                  <div class="popular-card">
-                      <figure class="card-img">
-                          <img src="./assets/images/popular-2.jpg" alt="Burj Khalifa, Dubai" loading="lazy">
-                      </figure>
-                      <div class="card-content">
-                          <div class="card-rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                          </div>
-                          <p class="card-subtitle">
-                              <a href="#">Dubai</a>
-                          </p>
-                          <h3 class="h3 card-title">
-                              <a href="#">Burj Khalifa</a>
-                          </h3>
-                          <p class="card-text">
-                              Rasakan keajaiban Burj Khalifa yang megah.
-                          </p>
-                      </div>
-                  </div>
-              </li>
-  
-              <li>
-                  <div class="popular-card">
-                      <figure class="card-img">
-                          <img src="./assets/images/popular-3.jpg" alt="Kuil Kyoto, Jepang" loading="lazy">
-                      </figure>
-                      <div class="card-content">
-                          <div class="card-rating">
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                              <ion-icon name="star"></ion-icon>
-                          </div>
-                          <p class="card-subtitle">
-                              <a href="#">Jepang</a>
-                          </p>
-                          <h3 class="h3 card-title">
-                              <a href="#">Kuil Kyoto</a>
-                          </h3>
-                          <p class="card-text">
-                              Nikmati keindahan dan ketenangan Kuil Kyoto.
-                          </p>
-                      </div>
-                  </div>
-              </li>
-  
-          </ul>
-  
-          <button class="btn btn-primary">Lebih Banyak Destinasi</button>
+        <div class="destination__card">
+          <img src="assets/destination-3.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Pulau Dewata</h4>
+              <p>Bali, Indonesia</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
-  
-  <section class="package" id="package">
-    <div class="container">
-        <p class="section-subtitle">Paket Populer</p>
-        <h2 class="h2 section-title">Cek Paket Kami</h2>
-        <p class="section-text">
-            Temukan berbagai paket menarik yang dirancang untuk pengalaman liburan yang tak terlupakan.
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Perjalanan Menuju Langit yang Mudah!</h2>
+      <p class="section__description">
+        Perencanaan Tanpa Usaha untuk Petualangan Anda Selanjutnya
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Proses Pemesanan Tanpa Hambatan</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Pemesanan Mudah, Hanya Satu Klik Jauh</h4>
+            <p>
+              Dari penerbangan dan akomodasi hingga aktivitas dan transfer,
+              semua yang Anda butuhkan tersedia di ujung jari Anda, membuat
+              perencanaan perjalanan menjadi mudah.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Rencana Itinerary yang Disesuaikan</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Rencana Khusus Hanya untuk Anda</h4>
+            <p>
+              Nikmati rencana perjalanan yang dipersonalisasi dirancang untuk
+              mencocokkan preferensi dan minat Anda. Apakah Anda mencari
+              petualangan atau pengalaman budaya, itinerary yang disesuaikan
+              kami memastikan perjalanan Anda unik.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Wawasan Lokal Ahli</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Tips dan Rekomendasi Dari Dalam</h4>
+            <p>
+              Kami menyediakan rekomendasi yang dirancang untuk makan, 
+              wisata, dan tempat-tempat tersembunyi, sehingga Anda bisa 
+              merasakan setiap destinasi seperti penduduk lokal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>LEPASKAN HASRAT BERJALAN JALAN BERSAMA PARI TRAVEL</h4>
+        <p>
+          Mulailah perjalanan yang tak tertandingi dengan Pari Travel, di mana 
+          mimpi perjalanan Anda menjadi kenyataan. Misi kami adalah untuk 
+          menginspirasi dan memfasilitasi petualangan Anda, apakah Anda 
+          mencari energi yang semarak dari kota yang ramai, keindahan 
+          damai pantai yang bersih, atau sejarah menarik dari landmark kuno. 
+          Di Pari Travel, kami menyediakan destinasi yang telah dikurasi dengan 
+          baik dan itinerary yang dipersonalisasi, memastikan setiap 
+          perjalanan disesuaikan dengan preferensi unik Anda. Temukan tempat 
+          tersembunyi, selami budaya yang beragam, dan ciptakan kenangan 
+          tak terlupakan yang akan bertahan seumur hidup.
         </p>
-        <ul class="package-list">
+        <p>
+          Dengan Pari Travel sebagai teman perjalanan Anda yang utama, menjelajahi 
+          keajaiban dunia menjadi lebih mudah. Tips dari dalam dan wawasan 
+          lokal kami memberi Anda alat untuk menjelajahi tempat baru dengan 
+          percaya diri dan semangat. Dari saat Anda mulai merencanakan hingga 
+          hari Anda kembali ke rumah, kami berdedikasi untuk membuat pengalaman 
+          perjalanan Anda lancar dan memperkaya.
+        </p>
+        <div class="showcase__btn">
+          <button class="btn">
+            Pesan Penerbangan Sekarang
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
 
-            <li>
-                <div class="package-card">
-                    <figure class="card-banner">
-                        <img src="./assets/images/packege-1.jpg" alt="Rasakan Liburan Hebat di Pantai" loading="lazy">
-                    </figure>
-                    <div class="card-content">
-                        <h3 class="h3 card-title">Rasakan Liburan Hebat di Pantai</h3>
-                        <p class="card-text">
-                            Nikmati pengalaman luar biasa di pantai dengan segala kenyamanan yang ditawarkan!
-                        </p>
-                        <ul class="card-meta-list">
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="time"></ion-icon>
-                                    <p class="text">7H/6M</p>
-                                </div>
-                            </li>
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="people"></ion-icon>
-                                    <p class="text">pax: 10</p>
-                                </div>
-                            </li>
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="location"></ion-icon>
-                                    <p class="text">Malaysia</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-price">
-                        <div class="wrapper">
-                            <p class="reviews">(25 ulasan)</p>
-                            <div class="card-rating">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                            </div>
-                        </div>
-                        <p class="price">
-                            $750
-                            <span>/ per orang</span>
-                        </p>
-                        <button class="btn btn-secondary">Pesan Sekarang</button>
-                    </div>
-                </div>
-            </li>
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>10+</h4>
+        <p>Tahun Pengalaman</p>
+      </div>
+      <div class="banner__card">
+        <h4>12K</h4>
+        <p>Klien Puas</p>
+      </div>
+      <div class="banner__card">
+        <h4>20+</h4>
+        <p>Destinasi Populer</p>
+      </div>
+    </section>
 
-            <li>
-                <div class="package-card">
-                    <figure class="card-banner">
-                        <img src="./assets/images/packege-2.jpg" alt="Liburan Musim Panas di Sungai Oxolotan" loading="lazy">
-                    </figure>
-                    <div class="card-content">
-                        <h3 class="h3 card-title">Liburan Musim Panas di Sungai Oxolotan</h3>
-                        <p class="card-text">
-                            Nikmati keindahan alam dan aktivitas seru di sepanjang sungai!
-                        </p>
-                        <ul class="card-meta-list">
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="time"></ion-icon>
-                                    <p class="text">7H/6M</p>
-                                </div>
-                            </li>
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="people"></ion-icon>
-                                    <p class="text">pax: 10</p>
-                                </div>
-                            </li>
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="location"></ion-icon>
-                                    <p class="text">Malaysia</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-price">
-                        <div class="wrapper">
-                            <p class="reviews">(20 ulasan)</p>
-                            <div class="card-rating">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                            </div>
-                        </div>
-                        <p class="price">
-                            $520
-                            <span>/ per orang</span>
-                        </p>
-                        <button class="btn btn-secondary">Pesan Sekarang</button>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="package-card">
-                    <figure class="card-banner">
-                        <img src="./assets/images/packege-3.jpg" alt="Liburan Akhir Pekan di Pulau Santorini" loading="lazy">
-                    </figure>
-                    <div class="card-content">
-                        <h3 class="h3 card-title">Liburan Akhir Pekan di Pulau Santorini</h3>
-                        <p class="card-text">
-                            Nikmati keindahan arsitektur dan pemandangan yang menakjubkan di Santorini.
-                        </p>
-                        <ul class="card-meta-list">
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="time"></ion-icon>
-                                    <p class="text">7H/6M</p>
-                                </div>
-                            </li>
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="people"></ion-icon>
-                                    <p class="text">pax: 10</p>
-                                </div>
-                            </li>
-                            <li class="card-meta-item">
-                                <div class="meta-box">
-                                    <ion-icon name="location"></ion-icon>
-                                    <p class="text">Malaysia</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-price">
-                        <div class="wrapper">
-                            <p class="reviews">(40 ulasan)</p>
-                            <div class="card-rating">
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                                <ion-icon name="star"></ion-icon>
-                            </div>
-                        </div>
-                        <p class="price">
-                            $660
-                            <span>/ per orang</span>
-                        </p>
-                        <button class="btn btn-secondary">Pesan Sekarang</button>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-        <button class="btn btn-primary">Lihat Semua Paket</button>
-    </div>
-</section>
-
-<section class="gallery" id="gallery">
-  <div class="container">
-      <p class="section-subtitle">Galeri Foto</p>
-      <h2 class="h2 section-title">Foto dari Para Pelancong</h2>
-      <p class="section-text">
-          Temukan momen-momen indah yang diabadikan oleh para pelancong. Setiap gambar menceritakan cerita yang unik.
+    <section class="section__container discover__container">
+      <h2 class="section__header">Jelajahi Dunia dari Atas</h2>
+      <p class="section__description">
+        Nikmati Pemandangan Menakjubkan dan Perspektif yang Unik
       </p>
-      <ul class="gallery-list">
-
-          <li class="gallery-item">
-              <figure class="gallery-image">
-                  <img src="./assets/images/gallery-1.jpg" alt="Gambar Galeri">
-              </figure>
-          </li>
-
-          <li class="gallery-item">
-              <figure class="gallery-image">
-                  <img src="./assets/images/gallery-2.jpg" alt="Gambar Galeri">
-              </figure>
-          </li>
-
-          <li class="gallery-item">
-              <figure class="gallery-image">
-                  <img src="./assets/images/gallery-3.jpg" alt="Gambar Galeri">
-              </figure>
-          </li>
-
-          <li class="gallery-item">
-              <figure class="gallery-image">
-                  <img src="./assets/images/gallery-4.jpg" alt="Gambar Galeri">
-              </figure>
-          </li>
-
-          <li class="gallery-item">
-              <figure class="gallery-image">
-                  <img src="./assets/images/gallery-5.jpg" alt="Gambar Galeri">
-              </figure>
-          </li>
-      </ul>
-  </div>
-</section>
-
-<section class="cta" id="contact">
-  <div class="container">
-      <div class="cta-content">
-          <p class="section-subtitle">Ajakan untuk Bertindak</p>
-          <h2 class="h2 section-title">Siap untuk Perjalanan Tak Terlupakan? Ingat Kami!</h2>
-          <p class="section-text">
-              Temukan pengalaman baru dan menciptakan kenangan indah bersama kami. Kami siap membantu Anda dalam setiap langkah.
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4>Pemandangan Kota dari Udara</h4>
+          <p>
+            Saksikan keajaiban arsitektur dan jalan-jalan yang ramai dari 
+            ketinggian, menawarkan perspektif yang unik.
           </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-ship-line"></i></span>
+          <h4>Kekayaan Pantai</h4>
+          <p>
+            Terbang di atas garis pantai yang bersih dan air biru jernih, 
+            mengungkapkan teluk tersembunyi dan terumbu karang yang 
+            penuh warna.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Landmark Bersejarah</h4>
+          <p>
+            Amati kemegahan kastil kuno dan situs-situs penting lainnya 
+            dengan cara yang tidak bisa ditawarkan oleh tur darat.
+          </p>
+        </div>
       </div>
-      <button class="btn btn-secondary">Hubungi Kami!</button>
-  </div>
-</section>
-</article>
-</main>
+    </section>
 
-<footer class="footer">
-  <div class="footer-top">
-      <div class="container">
-          <div class="footer-brand">
-              <a href="#" class="logo">
-                  <h1>PARI TRAVEL</h1>
-              </a>
-              <p class="footer-text">
-                  Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia at perferendis, pretium, aenean aut ultrices.
-              </p>
-          </div>
-
-          <div class="footer-contact">
-              <h4 class="contact-title">Hubungi Kami</h4>
-              <p class="contact-text">
-                  Jangan ragu untuk menghubungi kami!!
-              </p>
-              <ul>
-                  <li class="contact-item">
-                      <ion-icon name="call-outline"></ion-icon>
-                      <a href="#" class="contact-link">+62 (123) 4567 90</a>
-                  </li>
-                  <li class="contact-item">
-                      <ion-icon name="mail-outline"></ion-icon>
-                      <a href="#" class="contact-link">admin@pari.com</a>
-                  </li>
-                  <li class="contact-item">
-                      <ion-icon name="location-outline"></ion-icon>
-                      <address>3146 Pulo Gebang, Indonesia</address>
-                  </li>
-              </ul>
-          </div>
-
-          <div class="footer-form">
-              <p class="form-text">
-                  Langganan buletin kami untuk mendapatkan pembaruan & berita terbaru!!
-              </p>
-              <form action="" class="form-wrapper">
-                  <input type="email" name="email" class="input-field" placeholder="Masukkan Email Anda" required>
-                  <button type="submit" class="btn btn-secondary">Langganan</button>
-              </form>
-          </div>
-      </div>
-  </div>
-</footer>
-<div class="footer-bottom">
-  <div class="container">
-      <p class="copyright">
-          &copy; 2024 <a href="">Pari Travel</a>. Semua hak dilindungi
+    <section class="section__container client__container">
+      <h2 class="section__header">Dikagumi oleh Lebih dari Seribu Pelancong</h2>
+      <p class="section__description">
+        Temukan cerita tentang hasrat menjelajah dan kenangan berharga melalui 
+        mata klien kami yang terhormat.
       </p>
-      <ul class="footer-bottom-list">
-          <li>
-              <a href="#" class="footer-bottom-link">Kebijakan Privasi</a>
-          </li>
-          <li>
-              <a href="#" class="footer-bottom-link">Syarat & Ketentuan</a>
-          </li>
-          <li>
-              <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
-      </ul>
-  </div>
-</div>
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
-  <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Pari Travel telah sepenuhnya mengubah pengalaman perjalanan saya. Dari 
+                  menemukan permata tersembunyi di kota-kota yang ramai hingga 
+                  menemukan tempat peristirahatan yang tenang, setiap detail 
+                  diatur dengan penuh perhatian. Saya sangat merekomendasikan 
+                  Pari Travel untuk siapa pun yang ingin meningkatkan pengalaman 
+                  perjalanan mereka!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>John Adams</h4>
+                  <h5>Blog Pelancong</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Petualangan terbaru saya dengan Pari Travel sungguh spektakuler. 
+                  Itinerary dan rekomendasi yang dipersonalisasi yang mereka 
+                  berikan membawa saya ke lokasi-lokasi luar biasa yang tidak 
+                  akan pernah saya temukan sendiri. Saya sudah merencanakan 
+                  petualangan berikutnya dengan mereka!
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Emily Thompson</h4>
+                  <h5>Penggemar Petualangan</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Pari Travel menawarkan pengalaman yang mengubah hidup untuk penelitian 
+                  saya tentang landmark bersejarah. Perspektif udara yang unik 
+                  memberikan tingkat apresiasi dan wawasan baru terhadap situs-situs 
+                  yang saya pelajari. Saya sangat merekomendasikan layanan mereka 
+                  kepada sesama sejarawan dan penggemar budaya.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Lee</h4>
+                  <h5>Sejarawan Budaya</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Mencari keseimbangan antara kerja dan perjalanan bisa jadi 
+                  menantang, tetapi Pari Travel membuatnya tanpa usaha. Perencanaan 
+                  mereka yang efisien dan rekomendasi yang sangat baik membantu 
+                  saya memaksimalkan waktu luang saya dan menikmati setiap momen 
+                  perjalanan saya. Saya menantikan untuk bekerja dengan mereka 
+                  lagi dalam perjalanan mendatang.
+                </p>
+              </div>
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Eksekutif Bisnis</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">TRAVEL PARI</a>
+          </div>
+          <p>
+            Jelajahi dunia dengan mudah dan penuh semangat melalui platform
+            perjalanan kami yang komprehensif. Perjalanan Anda dimulai di sini, 
+            di mana perencanaan yang mulus bertemu dengan pengalaman tak terlupakan.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Tautan Cepat</h4>
+          <ul class="footer__links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Penerbangan</a></li>
+            <li><a href="#">Hotel</a></li>
+            <li><a href="#">Kapal Pesiar</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Hubungi Kami</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +62 9876543210
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span> info@paritravel.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Jakarta, Indonesia
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Berlangganan</h4>
+          <form action="/">
+            <input type="text" placeholder="Masukkan email Anda" />
+            <button class="btn">Berlangganan</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Hak Cipta © 2024 PARI TRAVEL. Semua hak dilindungi.
+      </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
